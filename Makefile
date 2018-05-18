@@ -26,6 +26,7 @@ DOCKER_BOTH='{"sandbox": "docker", "handler_cache_size": 10000000, "import_cache
 WORKER_TIMEOUT=60
 
 define RUN_TEST=
+	@echo "RUN_TEST"
 	@echo "Killing worker if running..."
 	-$(KILL_WORKER)
 	@echo
